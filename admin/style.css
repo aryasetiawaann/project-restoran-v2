@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: bisque;
+  width: 100%;
+  height: 40px;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin_card-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.admin_card-container .card {
+  margin: 10px;
+  border: 3px solid black;
+  width: 250px;
+}
+
+.admin_card-container .card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 9/12;
+}
+
+.admin_card-container .card .card-body {
+  margin: 3px;
+}
+
+.admin_card-container .card .card-buttons{
+    display: flex;
+    margin: 3px;
+}
