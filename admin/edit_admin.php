@@ -25,7 +25,7 @@ $_SESSION['foto_awal'] = $row['foto'];
 <div class="edit-admin_container">
         <div class="navbar">
             <div><a href="home_admin.php">Logo</a></div>
-            <button>Login/ logout</button>
+            <button>Logout</button>
         </div>
         <div>
             <?php if(isset($_GET['error'])){ ?>

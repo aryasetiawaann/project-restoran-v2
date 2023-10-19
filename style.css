@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;500;700&family=Poppins:wght@400;500&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  height: 610px;
+  position: relative;
+}
+
+.header-body {
+  position: relative;
+}
+
+.header-body h1 {
+  margin-top: 10%;
+  width: 787px;
+  color: rgba(183, 128, 107, 0.69);
+  font-family: Franklin Gothic Heavy;
+  font-size: 78px;
+  font-weight: 400;
+}
+
+.header-body p {
+  width: 360px;
+  height: 286px;
+  flex-shrink: 0;
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.header-body .croissant {
+  width: 510px;
+  position: absolute;
+  aspect-ratio: 1/1;
+  top: 0;
+  right: 19%;
+}
+
+.header-body .bg-roti {
+  position: absolute;
+  top: 15%;
+  z-index: -1;
+  aspect-ratio: 1/1;
+  right: 15%;
+}
+
+.header-body .eiffel {
+  width: 500px;
+  height: 500px;
+  flex-shrink: 0;
+  position: absolute;
+  opacity: 10%;
+  bottom: 0;
+  left: -100px;
+}
+
+.shape {
+  position: absolute;
+  z-index: -99;
+  width: 5000px;
+  margin-left: -1980px;
+  height: 2000px;
+  transform: rotate(-17.688deg);
+  flex-shrink: 0;
+  background-color: #f5f2f2;
+}
+
+.navbar-brand {
+  font-family: "Cormorant Infant", serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #7a7a7a;
+}
+
+.navbar {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.navbar .nav-item a {
+  color: #b7806b;
+}
+
+.keranjang img {
+  color: #b37a64;
+}
+
+.notif {
+  background: url("./_assets/notif.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 18px;
+  font-size: 12px;
+  color: #ffffff;
+  top: -10px;
+  right: 5px;
+}
+
+.divider {
+  color: #49360b;
+  font-size: 32px;
+  width: 13px;
+  height: 50px;
+}
+
+.login-button {
+  font-size: 16px;
+  font-weight: 600;
+  color: #b7806b;
+  text-decoration: none;
+}
+
+.register-button {
+  border-radius: 10px;
+  background: #b37a64;
+  border: none;
+  width: 100px;
+  height: 38px;
+  font-size: 16px;
+  color: #f5f2f2;
+  font-weight: 600;
+}
