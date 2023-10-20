@@ -37,7 +37,7 @@
                             <a class="nav-link" href="#">Kontak</a>
                         </li>
                         </ul>
-                        <div class="position-relative d-none d-lg-block d-xl-none" style="width:min-content;">
+                        <div class="position-relative d-none d-lg-block d-xl-block" style="width:min-content;">
                             <a href="#" class="keranjang me-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z" stroke="#B37A64" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="#B37A64" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -46,7 +46,7 @@
                             </a>
                             <div class="notif position-absolute text-center"><p>1</p></div>
                         </div>
-                        <span class="divider d-none d-lg-block d-xl-none">|</span>
+                        <span class="divider d-none d-lg-block d-xl-block ">|</span>
                         <a href="#" class="login-button ms-lg-3">Masuk</a>
                         <button class="register-button ms-3">Daftar</button>
                         
@@ -64,9 +64,58 @@
                 <img class="eiffel" src="./_assets/eiffel.png" alt="Croissant Home">
             </div>
         </div>
-        <div>
-            <h1>TEST</h1>
+        <div id="top-menu" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#top-menu" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#top-menu" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#top-menu" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active c-item" data-bs-interval="3000">
+                <img src="./_assets/burger_jumbo.jpg" class="d-block w-100 c-img" alt="Slide 1">
+                <div class="carousel-caption d-none d-md-block c-caption">
+                <h1>Quiche with filling beef and cheese</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere perspiciatis quae cumque iusto quibusdam eligendi odio et delectus officia in quod consequatur vero voluptate, nulla velit praesentium laboriosam hic beatae.</p>
+                </div>
+            </div>
+            <div class="carousel-item c-item" data-bs-interval="3000">
+                <img src="./_assets/home_gede.jpg" class="d-block w-100 c-img" alt="Slide 2">
+                <div class="carousel-caption d-none d-md-block c-caption">
+                <h1>Quiche with filling beef and cheese</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere perspiciatis quae cumque iusto quibusdam eligendi odio et delectus officia in quod consequatur vero voluptate, nulla velit praesentium laboriosam hic beatae.</p>
+                </div>
+                </div>
+                <!-- <div class="carousel-item" data-bs-interval="3000">
+                <img src="..." class="d-block w-100" alt="...">
+                </div> -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#top-menu" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#top-menu" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
+        <div class="menu pt-5">
+            <h3 class="menu-title">MENU</h3>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./_assets/Crepes.png" alt="Main Course">
+                    <div class="card-desc">
+                        <h3>Crêpes</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id dolorum reiciendis voluptatum omnis ducimus vero tempora numquam sint? Quidem ea placeat minus optio officiis porro itaque reprehenderit? Non, aut quaerat!</p>
+                    </div>
+                    <button>Tambah</button>
+                </div>
+            </div>
+            <div class="lihat-semua">
+                <button>Lihat Semua Menu</button>
+            </div>
     </div>
 </body>
+<footer>
+
+</footer>
 </html>

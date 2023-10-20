@@ -54,7 +54,6 @@ body {
   height: 500px;
   flex-shrink: 0;
   position: absolute;
-  opacity: 10%;
   bottom: 0;
   left: -100px;
 }
@@ -125,4 +124,146 @@ body {
   font-size: 16px;
   color: #f5f2f2;
   font-weight: 600;
+}
+
+/* CAROUSEL */
+
+.c-item {
+  height: 673px;
+}
+
+.c-img {
+  object-fit: cover;
+  filter: brightness(0.8);
+  height: 100%;
+}
+
+.c-caption {
+  top: 30%;
+}
+
+.c-caption h1 {
+  font-family: Franklin Gothic Heavy;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.2px;
+}
+
+.c-caption p {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 150px;
+  border-radius: 10px;
+}
+/* END CAROUSEL */
+
+/* MENU */
+.menu {
+  padding-bottom: 100px;
+  background: url(./_assets/eiffel.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.menu .menu-title {
+  width: 117px;
+  text-align: center;
+  margin: 40px auto;
+  color: #b7806b;
+  font-family: Cormorant Infant;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.cards-container {
+  display: grid;
+  min-height: 500px;
+  max-height: 1000px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  margin: 0 30px;
+  padding: 100px 50px;
+  overflow: hidden;
+  justify-content: center;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #d6ab83 0%, rgba(217, 217, 217, 0) 100%);
+}
+
+.card {
+  width: 250px;
+  height: 310px;
+  flex-shrink: 0;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.card button {
+  border-radius: 20px;
+  background: #d8b28e;
+  border: none;
+  width: 179px;
+  height: 29px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #fff;
+}
+
+.card-desc {
+  height: 150px;
+}
+
+.card h3 {
+  color: #e3a56d;
+  font-family: Cormorant Infant;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.card p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card img {
+  margin: 0 auto;
+  width: 75%;
+  aspect-ratio: 1/1;
+  margin-top: -80px;
+}
+
+.lihat-semua {
+  width: 100%;
+  text-align: center;
+}
+
+.lihat-semua button {
+  width: 200px;
+  height: 60px;
+  border-radius: 20px;
+  border: none;
+  background: #d7ae87;
+  color: #fff;
+  font-family: "poppins";
+  font-size: 16px;
+}
+
+.footer-left{
+  
 }
