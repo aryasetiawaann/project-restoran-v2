@@ -50,11 +50,11 @@ function createData(){
             break;
     }
 
-    $sql = "INSERT INTO menu(nama, detail, harga, foto)
-            VALUES(?, ?, ?, ?)";
+    $sql = "INSERT INTO menu(nama, detail, harga, foto, kategori)
+            VALUES(?, ?, ?, ?, ?)";
 
     $stmt = $db->prepare($sql);
-    $data = [$nama, $deskripsi, $harga, $filename];
+    $data = [$nama, $deskripsi, $harga, $filename, $kategori];
     $stmt->execute($data);
 
     header('Location: ../admin/home_admin.php');
@@ -102,6 +102,7 @@ function editData(){
             case 'bmp':
             case 'gif':
                 unlink("../_photos/{$_SESSION['foto_awal']}");
+                unset($_SESSION['foto_awal']);
                 move_uploaded_file($path_file, "../_photos/{$filename}");
                 break;
             case '':
@@ -115,19 +116,19 @@ function editData(){
         }
     
         $sql = "UPDATE menu
-                SET nama = ?, detail = ?, harga = ?, foto = ?
+                SET nama = ?, detail = ?, harga = ?, foto = ?, kategori = ?
                 WHERE id = ?";
     
         $stmt = $db->prepare($sql);
-        $data = [$nama, $deskripsi, $harga, $filename, $id];
+        $data = [$nama, $deskripsi, $harga, $filename, $kategori, $id];
         $stmt->execute($data);
     }else{
         $sql = "UPDATE menu
-                SET nama = ?, detail = ?, harga = ?
+                SET nama = ?, detail = ?, harga = ?, kategori = ?
                 WHERE id = ?";
     
         $stmt = $db->prepare($sql);
-        $data = [$nama, $deskripsi, $harga, $id];
+        $data = [$nama, $deskripsi, $harga, $kategori, $id];
         $stmt->execute($data);
     }
 
@@ -138,6 +139,7 @@ function editData(){
 function deleteData(){
     global $db;
     $id = $_POST['id'];
+    $foto = $_POST['foto'];
 
     $sql = "DELETE FROM menu WHERE id = ?";
 
@@ -145,6 +147,7 @@ function deleteData(){
     $stmt = $db->prepare($sql);
     $hasil = $stmt->execute($data);
 
+    unlink("../_photos/{$_POST['foto']}");
     header('Location: ../admin/home_admin.php');
     exit();
 }
