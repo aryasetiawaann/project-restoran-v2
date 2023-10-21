@@ -5,10 +5,10 @@ USE restoran;
 CREATE TABLE menu(
     id INT PRIMARY KEY AUTO_INCREMENT,
     nama VARCHAR(50) NOT NULL,
-    -- kategori ENUM("", "", ""),
     detail VARCHAR(200),
     harga INT UNSIGNED NOT NULL,
     foto VARCHAR(100)
+    kategori ENUM("Main Course", "Dessert", "Drinks"),
 );
 
 CREATE TABLE users(
