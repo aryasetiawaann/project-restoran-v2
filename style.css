@@ -4,6 +4,13 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+/* --------------------- HOMEPAGE --------------------- */
+
 .header {
   overflow: hidden;
   height: 610px;
@@ -67,6 +74,34 @@ body {
   transform: rotate(-17.688deg);
   flex-shrink: 0;
   background-color: #f5f2f2;
+}
+
+@media screen and (max-width: 1200px) {
+  .header-body .croissant {
+    right: 10%;
+  }
+
+  .header-body .bg-roti {
+    right: 10%;
+  }
+
+  .shape {
+    margin-left: -2050px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .header-body h1 {
+    width: 620px;
+  }
+
+  .header-body .croissant {
+    width: 400px;
+    position: absolute;
+    aspect-ratio: 1/1;
+    top: 16%;
+    right: 0;
+  }
 }
 
 .navbar-brand {
@@ -169,7 +204,7 @@ body {
 /* MENU */
 .menu {
   padding-bottom: 100px;
-  background: url(./_assets/eiffel.png);
+  background: url(./_assets/eiffel.webp);
   background-repeat: no-repeat;
   background-position: bottom right;
 }
@@ -188,13 +223,12 @@ body {
 .cards-container {
   display: grid;
   min-height: 500px;
-  max-height: 1000px;
-  grid-template-columns: repeat(4, 1fr);
+  max-height: 900px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 50px;
   margin: 0 30px;
+  overflow-y: hidden;
   padding: 100px 50px;
-  overflow: hidden;
-  justify-content: center;
   border-radius: 20px;
   background: linear-gradient(180deg, #d6ab83 0%, rgba(217, 217, 217, 0) 100%);
 }
@@ -203,6 +237,7 @@ body {
   width: 250px;
   height: 310px;
   flex-shrink: 0;
+  margin-bottom: 80px;
   text-align: center;
   padding: 10px;
   border-radius: 20px;
@@ -257,6 +292,7 @@ body {
   width: 200px;
   height: 60px;
   border-radius: 20px;
+  margin-top: 30px;
   border: none;
   background: #d7ae87;
   color: #fff;
@@ -264,3 +300,224 @@ body {
   font-size: 16px;
 }
 
+.go-top {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 5%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #b37a64;
+  right: 5%;
+}
+
+.go-top img {
+  width: 70%;
+  aspect-ratio: 4/4;
+  z-index: 99;
+}
+/* --------------------- END HOMEPAGE --------------------- */
+
+/* --------------------- FOOTER ---------------------*/
+
+footer {
+  background-color: #49360b;
+}
+
+.container {
+  max-width: auto;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-md-6 {
+  flex-basis: 50%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.col-md-6 h3 {
+  padding-top: 50px;
+  color: #fff;
+  font-family: Cormorant Infant;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  padding-bottom: 20px;
+}
+
+.col-md-6 p {
+  color: rgba(255, 255, 255, 0.748);
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.col-md-6 img {
+  margin-top: 40px;
+}
+
+.col-md-6 p {
+  color: rgba(255, 255, 255, 0.425);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 100;
+  margin-top: 20px;
+}
+
+ul.footer-links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 20px;
+}
+
+ul.footer-links li {
+  padding-top: 55px;
+  margin-left: 30px;
+}
+
+ul.footer-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+ul.footer-links li:first-child {
+  margin-left: 0;
+}
+
+ul.footer-m {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 120px;
+  filter: invert(50%);
+  margin-top: 30px;
+}
+
+ul.footer-m li {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+ul.footer-m li:first-child {
+  margin-left: 0;
+}
+
+ul.footer-m img {
+  width: 32px;
+  height: 32px;
+}
+
+hr {
+  background: rgba(255, 255, 255, 0.31);
+  height: 3px;
+  margin-left: 14px;
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.31);
+  padding: 10px;
+  text-align: center;
+}
+
+.copyright p {
+  font-size: 13px;
+}
+
+/* --------------------- END FOOTER --------------------- */
+
+/* --------------------- MENU --------------------- */
+.menu-page {
+  padding-bottom: 100px;
+  background: url(./_assets/eiffel.webp);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+.menu-page .menu-page-title {
+  width: 200px;
+  text-align: center;
+  margin: 30px auto;
+  color: #b7806b;
+  font-family: Cormorant Infant;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.menu-page .menu-cards-container {
+  display: grid;
+  min-height: 500px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 50px;
+  margin: 0 30px;
+  padding: 100px 50px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #d6ab83 0%, rgba(217, 217, 217, 0) 100%);
+}
+
+.menu-page .menu-card {
+  width: 250px;
+  height: 310px;
+  flex-shrink: 0;
+  margin-bottom: 80px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.menu-page .menu-card button {
+  border-radius: 20px;
+  background: #d8b28e;
+  border: none;
+  width: 179px;
+  height: 29px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #fff;
+}
+
+.menu-page .menu-card-desc {
+  height: 150px;
+}
+
+.menu-page .menu-card h3 {
+  color: #e3a56d;
+  font-family: Cormorant Infant;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.menu-page .menu-card p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu-page .menu-card img {
+  margin: 0 auto;
+  width: 75%;
+  aspect-ratio: 1/1;
+  margin-top: -80px;
+}
+/* --------------------- END MENU --------------------- */

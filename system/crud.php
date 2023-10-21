@@ -152,6 +152,14 @@ function deleteData(){
     exit();
 }
 
+function addCart(){
+
+}
+
+function deleteCart(){
+    
+}
+
 if(isset($_POST['addData'])){
     createData();
 }else if(isset($_POST['editData'])){

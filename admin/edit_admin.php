@@ -21,11 +21,11 @@ $_SESSION['foto_awal'] = $row['foto'];
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Nama Restoran | Admin Page</title>
+    <title>DeLouvre | Admin Page</title>
 </head>
 <body>
 <div class="edit-admin_container">
-<nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+<nav class="navbar navbar-expand-lg sticky-top shadow-sm d-flex justify-content-evenly">
             <div class="container-lg mx-md-5">
                 <a class="navbar-brand" href="home_admin.php">DeLouvre <span>| Admin Page</span></a>
                 <button class="logout-button ms-3">Logout</button>

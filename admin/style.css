@@ -39,6 +39,11 @@ a {
   font-weight: 600;
 }
 
+.list-menu {
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
 .menu-greeting {
   font-family: "Cormorant Infant", serif;
   padding: 30px 0;
@@ -53,6 +58,7 @@ a {
 }
 
 .menu-buttons {
+  display: flex;
   margin-right: 10%;
 }
 
@@ -143,3 +149,32 @@ a {
 }
 
 /* ----------------------------- END CREATE ADMIN DAN EDIT ADMIN ----------------------------- */
+
+@media screen and (max-width: 800px) {
+  .menu-greeting {
+    width: 300px;
+  }
+
+  .menu-greeting h3 {
+    font-size: 24px;
+  }
+
+  .menu-buttons {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .admin-form {
+    width: 350px;
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .admin-form {
+    width: 300px;
+    padding: 30px;
+    font-size: 13px;
+  }
+}
