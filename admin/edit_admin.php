@@ -2,16 +2,19 @@
 session_start();
 require_once('../system/db.php');
 
-$id = $_GET['id'];
+if(isset($_GET['id'])){
+    $id = $_GET['id'];
+    
+    $sql = "SELECT * FROM menu WHERE id = ?";
+    
+    $stmt = $db->prepare($sql);
+    $data = [$id];
+    $stmt->execute($data);
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+    
+    $_SESSION['foto_awal'] = $row['foto'];
+}
 
-$sql = "SELECT * FROM menu WHERE id = ?";
-
-$stmt = $db->prepare($sql);
-$data = [$id];
-$stmt->execute($data);
-$row = $stmt->fetch(PDO::FETCH_ASSOC);
-
-$_SESSION['foto_awal'] = $row['foto'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,11 +27,26 @@ $_SESSION['foto_awal'] = $row['foto'];
     <title>DeLouvre | Admin Page</title>
 </head>
 <body>
-<div class="edit-admin_container">
+<?php
+            if(!isset($_SESSION['role']) || $_SESSION['role'] != 'Admin' || $_SESSION['role'] == ''){
+                echo '
+                <div class="announce container text-center">
+                <h1 class="mt-5">Kamu Tidak Memiliki Akses Ke Page Ini</h1>
+                <a href="../index.php"><button class="mt-3">Kembali</button></a>
+                </div>
+                <div class="edit-admin_container d-none">
+                ';
+            }else if($_SESSION['role'] == 'Admin'){
+                echo '<div class="edit-admin_container">';
+            }
+    ?>
+
 <nav class="navbar navbar-expand-lg sticky-top shadow-sm d-flex justify-content-evenly">
             <div class="container-lg mx-md-5">
                 <a class="navbar-brand" href="home_admin.php">DeLouvre <span>| Admin Page</span></a>
-                <button class="logout-button ms-3">Logout</button>
+                <a href="../logout.php">
+                    <button class="logout-button ms-3">Logout</button>
+                </a>
             </div>
         </nav>
         <div class="greeting">

@@ -1,5 +1,5 @@
 <?php
-  
+  session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,11 +12,26 @@
     <title>DeLouvre | Admin Page</title>
 </head>
 <body>
-    <div class="create-admin_container">
+<?php
+    if(!isset($_SESSION['role']) || $_SESSION['role'] != 'Admin' || $_SESSION['role'] == ''){
+        echo '
+        <div class="announce container text-center">
+        <h1 class="mt-5">Kamu Tidak Memiliki Akses Ke Page Ini</h1>
+        <a href="../index.php"><button class="mt-3">Kembali</button></a>
+        </div>
+        <div class="create-admin_container d-none">
+        ';
+        }else if($_SESSION['role'] == 'Admin'){
+            echo ' <div class="create-admin_container">';
+        }
+    ?>
+   
         <nav class="navbar navbar-expand-lg sticky-top shadow-sm d-flex justify-content-evenly">
             <div class="container-lg mx-md-5">
                 <a class="navbar-brand" href="home_admin.php">DeLouvre <span>| Admin Page</span></a>
-                <button class="logout-button ms-3">Logout</button>
+                <a href="../logout.php">
+                    <button class="logout-button ms-3">Logout</button>
+                </a>
             </div>
         </nav>
         <div class="greeting">

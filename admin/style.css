@@ -12,6 +12,22 @@ a {
   color: unset;
 }
 
+.announce h1{
+  font-family: "Cormorant Infant", serif;
+  font-size: 48px;
+}
+
+.announce button {
+  border-radius: 10px;
+  background: #b37a64;
+  border: none;
+  width: 80px;
+  height: 38px;
+  font-size: 14px;
+  color: #f5f2f2;
+  font-weight: 600;
+}
+
 .navbar {
   background-color: #ffffff;
   font-family: "Poppins", sans-serif;

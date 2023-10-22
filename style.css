@@ -121,6 +121,11 @@ a {
   color: #b7806b;
 }
 
+.keranjang-hp {
+  width: min-content;
+  margin-left: 60%;
+}
+
 .keranjang img {
   color: #b37a64;
 }
@@ -137,7 +142,7 @@ a {
 }
 
 .divider {
-  color: #49360b;
+  color: #7a7a7a;
   font-size: 32px;
   width: 13px;
   height: 50px;
@@ -161,6 +166,19 @@ a {
   font-weight: 600;
 }
 
+.nav-greet {
+  color: #7a7a7a;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.nav-greet:hover {
+  color: black;
+}
+
+.--bs-dropdown-link-active-bg {
+  color: #7a7a7a;
+}
 /* CAROUSEL */
 
 .c-item {
@@ -237,6 +255,7 @@ a {
   width: 250px;
   height: 310px;
   flex-shrink: 0;
+  margin: 0 auto;
   margin-bottom: 80px;
   text-align: center;
   padding: 10px;
@@ -301,16 +320,12 @@ a {
 }
 
 .go-top {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   bottom: 5%;
+  right: 5%;
   width: 40px;
   height: 40px;
   border-radius: 50px;
   background-color: #b37a64;
-  right: 5%;
 }
 
 .go-top img {
@@ -450,12 +465,12 @@ hr {
 }
 
 .menu-page .menu-page-title {
-  width: 200px;
+  width: 300px;
   text-align: center;
   margin: 30px auto;
   color: #b7806b;
   font-family: Cormorant Infant;
-  font-size: 36px;
+  font-size: 42px;
   font-style: normal;
   font-weight: 600;
 }
@@ -475,6 +490,7 @@ hr {
   width: 250px;
   height: 310px;
   flex-shrink: 0;
+  margin: 0 auto;
   margin-bottom: 80px;
   text-align: center;
   padding: 10px;
@@ -521,3 +537,448 @@ hr {
   margin-top: -80px;
 }
 /* --------------------- END MENU --------------------- */
+
+/* --------------------- DETAIL --------------------- */
+.detail-container {
+  width: 100%;
+  background-color: #f5f2f2;
+  height: 80vh;
+  margin-top: 15%;
+  padding: 0 20px;
+  background-image: url(./_assets/eiffel.webp);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+}
+
+.detail-left {
+  width: 30%;
+  margin-top: -12%;
+  text-align: center;
+}
+
+.detail-left img {
+  width: 80%;
+  height: auto;
+  aspect-ratio: 1/1;
+}
+
+.detail-left button {
+  border-radius: 20px;
+  background: #d8b28e;
+  border: none;
+  width: 150px;
+  margin-top: 20px;
+  height: 30px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.detail-right {
+  width: 70%;
+}
+
+.detail-right h1 {
+  font-family: Franklin Gothic Heavy;
+  color: rgba(183, 128, 107, 0.69);
+  font-size: 42px;
+  margin-top: -13%;
+  margin-bottom: 10%;
+}
+
+/* --------------------- END DETAIL --------------------- */
+
+/* --------------------- KERANJANG --------------------- */
+.keranjang-item img {
+  width: 15%;
+  aspect-ratio: 1/1;
+}
+
+.keranjang-desc {
+  width: 70%;
+}
+
+.keranjang-desc h3 {
+  color: #e3a56d;
+  font-family: Cormorant Infant;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.keranjang-container hr {
+  width: 95%;
+}
+
+.keranjang-container h1 {
+  width: 300px;
+  text-align: center;
+  margin: 30px auto;
+  color: #b7806b;
+  font-family: Cormorant Infant;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.keranjang-kosong {
+  width: 350px;
+  height: 80vh;
+  text-align: center;
+  margin: 30px auto;
+  color: #b7806b;
+  font-family: Cormorant Infant;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.keranjang-total {
+  font-family: Cormorant Infant;
+  font-size: 32px;
+  color: #b7806b;
+  font-weight: 600;
+}
+
+.keranjang-item a {
+  width: 35px;
+}
+
+.keranjang-item button {
+  background: none;
+  border: none;
+}
+
+.keranjang-item .remove {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* --------------------- END KERANJANG --------------------- */
+
+/* -------------------- RESPONSIVE -------------------- */
+@media screen and (max-width: 1200px) {
+  .header-body .croissant,
+  .header-body .bg-roti {
+    right: 8%;
+  }
+
+  .shape {
+    margin-left: -2050px;
+  }
+
+  .header-body h1 {
+    font-size: 72px;
+    margin-top: 6%;
+    width: 620px;
+  }
+
+  .header-body p {
+    width: 45%;
+  }
+
+  .header-body h1,
+  .header-body p {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .navbar-brand {
+    font-size: 32px;
+  }
+
+  .menu-title {
+    font-size: 40px;
+    margin: 20px auto;
+  }
+
+  .go-top {
+    width: 50px;
+    height: 50px;
+  }
+}
+/*-------------------------------------------------*/
+@media screen and (max-width: 992px) {
+  .header-body h1 {
+    font-size: 64px;
+    margin-top: 8%;
+    width: 620px;
+  }
+
+  .header-body .croissant {
+    width: 400px;
+    position: absolute;
+    aspect-ratio: 1/1;
+    top: 16%;
+    right: 0;
+  }
+
+  .header-body p {
+    width: 55%;
+    font-size: 16px;
+  }
+
+  .header-body h1,
+  .header-body p {
+    margin: 8% 20px;
+  }
+
+  .navbar-brand {
+    font-size: 24px;
+  }
+
+  .menu-title {
+    font-size: 40px;
+    margin: 20px auto;
+  }
+
+  .lihat-semua button {
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .go-top {
+    width: 50px;
+    height: 50px;
+  }
+
+  .detail-container {
+    height: 80vh;
+    margin-top: 20%;
+    background-position: bottom center;
+  }
+
+  .detail-left {
+    width: 30%;
+    margin-top: -12%;
+    text-align: center;
+  }
+
+  .detail-left img {
+    width: 80%;
+    height: auto;
+    aspect-ratio: 1/1;
+  }
+
+  .detail-left button {
+    border-radius: 20px;
+    background: #d8b28e;
+    border: none;
+    width: 150px;
+    margin-top: 20px;
+    height: 30px;
+    font-size: 14px;
+    color: #fff;
+  }
+
+  .detail-right {
+    width: 70%;
+  }
+
+  .detail-right h1 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .detail-right p {
+    font-size: 14px;
+    text-align: start;
+  }
+}
+/*-------------------------------------------------*/
+@media screen and (max-width: 656px) {
+  .carousel-caption h1 {
+    font-size: 40px !important;
+    max-width: 100%;
+    text-align: center;
+    margin-top: -100px;
+  }
+
+  .carousel-caption p {
+    font-size: 16px !important;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .header-body h1,
+  .header-body p {
+    margin: 20px auto;
+    width: 90%;
+  }
+
+  .header-body .croissant {
+    width: 90%;
+    margin: 50px auto;
+    display: block;
+  }
+
+  .header-body .bg-roti {
+    margin: 500px auto;
+  }
+
+  .header-body .eiffel {
+    margin: -100px auto;
+  }
+
+  .header-body h1 {
+    font-size: 36px;
+  }
+
+  .header-body p {
+    font-size: 14px;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .row {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  ul.footer-links {
+    justify-content: start;
+    margin-left: 8px;
+  }
+
+  ul.footer-m {
+    justify-content: center;
+    margin-left: 25%;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .keranjang-hp {
+    width: min-content;
+    margin-left: 45%;
+  }
+
+  .cards-container {
+    padding: 100px 25px;
+  }
+
+  .menu-page .menu-cards-container {
+    padding: 100px 25px;
+  }
+
+  .detail-container {
+    width: 100%;
+    background-color: #f5f2f2;
+    height: max-content;
+    margin-top: 40%;
+    padding: 0 20px;
+    padding-bottom: 50px;
+  }
+
+  .detail-left {
+    width: 100%;
+    margin-top: -30%;
+    text-align: center;
+  }
+
+  .detail-left img {
+    width: 70%;
+    height: auto;
+    aspect-ratio: 1/1;
+  }
+
+  .detail-left button {
+    border-radius: 20px;
+    background: #d8b28e;
+    border: none;
+    width: 150px;
+    margin-top: 20px;
+    height: 30px;
+    font-size: 14px;
+    color: #fff;
+  }
+
+  .detail-right {
+    width: 100%;
+  }
+
+  .detail-right h1 {
+    font-family: Franklin Gothic Heavy;
+    color: rgba(183, 128, 107, 0.69);
+    font-size: 48px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  ul.footer-m {
+    margin-left: 70%;
+  }
+
+  .keranjang-item {
+    margin: 25px 0;
+  }
+
+  .keranjang-item img {
+    width: 20%;
+  }
+
+  .keranjang-item h5 {
+    font-size: 14px;
+  }
+
+  .keranjang-desc p {
+    font-size: 12px;
+    margin: 0;
+    margin-bottom: 3px;
+  }
+
+  .keranjang-desc h3 {
+    font-size: 24px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .keranjang-hp {
+    width: min-content;
+    margin-left: 35%;
+  }
+  .card {
+    width: 100%;
+  }
+
+  .card img {
+    width: 65%;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .card button {
+    width: 70%;
+  }
+
+  .menu-page .menu-card {
+    width: 100%;
+  }
+
+  .menu-page .menu-card img {
+    width: 65%;
+  }
+
+  .menu-page .menu-card p {
+    font-size: 14px;
+  }
+
+  .menu-page .menu-card button {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .keranjang-hp {
+    width: min-content;
+    margin-left: 25%;
+  }
+}
+
+/* ------------------------------------ REGISTER AND LOGIN ------------------------------------*/

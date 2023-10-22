@@ -153,11 +153,43 @@ function deleteData(){
 }
 
 function addCart(){
+    global $db;
+    
+    if(!isset($_SESSION['user_id']) || $_SESSION['user_id'] == ''){
+        header('Location: ../login.php');
+    }else{
+        $id = $_GET['add-id'];
+        $user_id = $_SESSION['user_id'];
 
+        $sql = "INSERT INTO cart(id_menu, id_user)
+                VALUES(?, ?)";
+
+        $data = [$id, $user_id];   
+        $stmt = $db->prepare($sql);
+        $stmt->execute($data);
+
+        header('Location: ../keranjang.php');
+    }
 }
 
 function deleteCart(){
+    global $db;
     
+    if(isset($_SESSION['user_id'])){
+        
+        $id = $_GET['delete-id'];
+        $user_id = $_SESSION['user_id'];
+
+        $sql = "DELETE FROM cart WHERE id_menu = ? AND id_user = ?";
+
+        $data = [$id, $user_id];   
+        $stmt = $db->prepare($sql);
+        $stmt->execute($data);
+
+        header('Location: ../keranjang.php');
+    }
+
+    exit();
 }
 
 if(isset($_POST['addData'])){
@@ -166,6 +198,10 @@ if(isset($_POST['addData'])){
     editData();
 }else if(isset($_POST['deleteData'])){
     deleteData();
+}else if(isset($_GET['add-id'])){
+    addCart();
+}else if(isset($_GET['delete-id'])){
+    deleteCart();
 }
 
 ?>
