@@ -16,10 +16,11 @@ CREATE TABLE users(
     fname VARCHAR(30) NOT NULL,
     lname VARCHAR(30), 
     username VARCHAR(50),
-    password VARCHAR(30),
+    password VARCHAR(500),
     tgl_lahir DATE,
     gender ENUM("Laki-laki", "Perempuan"),
-    role ENUM("Customer", "Admin")
+    role ENUM("Customer", "Admin"),
+    email VARCHAR(100);
 );
 
 CREATE TABLE cart(
