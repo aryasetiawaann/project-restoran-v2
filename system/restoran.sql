@@ -20,7 +20,7 @@ CREATE TABLE users(
     tgl_lahir DATE,
     gender ENUM("Laki-laki", "Perempuan"),
     role ENUM("Customer", "Admin"),
-    email VARCHAR(100);
+    email VARCHAR(100)
 );
 
 CREATE TABLE cart(
