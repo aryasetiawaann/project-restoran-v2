@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="front.css">
     <script src="password.js"></script>
-    <title>DeLouvre | Register</title>
+    <title>Restoran IF330 - DeLouvre | Register</title>
     <link rel="stylesheet" href="./boxicons-2.1.4/css/boxicons.min.css">
 </head>
 <body>
-        <h1>DeLouvre</h1>
+        <a href="./index.php" style="text-decoration:none;color:unset">
+            <h1>DeLouvre</h1>
+        </a>
         <h2>c'est bon de te revoir</h2>
         <div class="box form-box">
 <?php 

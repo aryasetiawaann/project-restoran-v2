@@ -26,7 +26,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>DeLouvre</title>
+    <title>Restoran IF330 - DeLouvre</title>
 </head>
 <body>
     <div class="container-fluid p-0">
@@ -107,22 +107,22 @@
                 <div class="carousel-item active c-item" data-bs-interval="3000">
                 <img src="./_assets/croissant-background.webp" class="d-block w-100 c-img" alt="Slide 1">
                 <div class="carousel-caption c-caption">
-                <h1>Quiche with filling beef and cheese</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere perspiciatis quae cumque iusto quibusdam eligendi odio et delectus officia in quod consequatur vero voluptate, nulla velit praesentium laboriosam hic beatae.</p>
+                <h1>Experience the Flakiness of Fresh Croissants</h1>
+                <p>A croissant is a flaky, buttery pastry with a distinctive buttery aroma. Shaped like a crescent moon, it's often served as a delightful breakfast or snack, and can be the perfect pick-me-up to start your day.</p>
                 </div>
                 </div>
                 <div class="carousel-item c-item" data-bs-interval="3000">
                 <img src="./_assets/home_gede.webp" class="d-block w-100 c-img" alt="Slide 2">
                 <div class="carousel-caption c-caption">
-                <h1>Quiche with filling beef and cheese</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere perspiciatis quae cumque iusto quibusdam eligendi odio et delectus officia in quod consequatur vero voluptate, nulla velit praesentium laboriosam hic beatae.</p>
+                <h1>Indulge in the Sweet Elegance of Clafoutis</h1>
+                <p>Clafoutis is a classic French dessert that features fresh fruits, typically cherries, suspended in a flan-like custard batter. The result is a delightful marriage of sweet and creamy, with a slightly caramelized top layer. It's a rustic and comforting treat that embodies the essence of French home baking.</p>
                 </div>
                 </div>
                 <div class="carousel-item c-item" data-bs-interval="3000">
                 <img src="./_assets/Salad_Jumbo.webp" class="d-block w-100 c-img" alt="Slide 3">
                 <div class="carousel-caption c-caption">
-                <h1>Quiche with filling beef and cheese</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere perspiciatis quae cumque iusto quibusdam eligendi odio et delectus officia in quod consequatur vero voluptate, nulla velit praesentium laboriosam hic beatae.</p>
+                <h1>Fresh and Flavorful: Our Signature Nicoise Salad</h1>
+                <p>Salad Nicoise is a classic French dish composed of grilled tuna, hard-boiled eggs, vegetables, and vinaigrette dressing, known for its Mediterranean-inspired flavors.</p>
                 </div>
                 </div>
             </div>
@@ -165,7 +165,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <h3>DeLouvre</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime enim, soluta atque ipsum non laboriosam minus? Cupiditate saepe delectus perspiciatis ullam ducimus porro nisi officiis consequuntur nulla facere, non quidem.</p>
+                    <p>DeLouvre, sebuah website yang menawarkan kuliner khas Prancis terbaik. Menu kami mencakup hidangan-hidangan ikonik Prancis, dari escargot hingga crème brûlée, cocok untuk penikmat kuliner Prancis atau yang ingin menjelajahi citarasa Prancis. Selamat datang di dunia kuliner Prancis.</p>
                     <p>Informatika 2022 | Universitas Multimedia Nusantara</p>
                 </div>
                 <div class="col-md-3 col-6">
@@ -184,7 +184,7 @@
                 </div>
                 <hr>
                 <div class="copyright">
-                    <p>Copyright &copy; 2023 MAKA Bahagia. Hak Cipta Dilindungi | IF330.</p>
+                    <p>Copyright &copy; 2023 Kelompok 7. Hak Cipta Dilindungi | IF330-C.</p>
                 </div>
             </div>
         </div>

@@ -192,6 +192,20 @@ function deleteCart(){
     exit();
 }
 
+function checkoutCart(){
+    global $db;
+
+    $user_id = $_SESSION['user_id'];
+
+    $sql = "DELETE FROM cart WHERE id_user = ?";
+
+    $data = [$user_id];
+    $stmt = $db->prepare($sql);
+    $stmt->execute($data);
+
+    header('Location: ../keranjang.php?checkout=true');
+}
+
 if(isset($_POST['addData'])){
     createData();
 }else if(isset($_POST['editData'])){
@@ -202,6 +216,8 @@ if(isset($_POST['addData'])){
     addCart();
 }else if(isset($_GET['delete-id'])){
     deleteCart();
+}else if(isset($_GET['checkout'])){
+    checkoutCart();
 }
 
 ?>
