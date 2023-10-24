@@ -127,7 +127,7 @@ if(isset($_GET['sort'])){
                 <div class="col-md-6">
                     <h3>DeLouvre</h3>
                     <p>DeLouvre, sebuah website yang menawarkan kuliner khas Prancis terbaik. Menu kami mencakup hidangan-hidangan ikonik Prancis, dari escargot hingga crème brûlée, cocok untuk penikmat kuliner Prancis atau yang ingin menjelajahi citarasa Prancis. Selamat datang di dunia kuliner Prancis.</p>
-                    <p>Informatika 2022 | Universitas Multimedia Nusantara</p>
+                    <p>Kelompok 7-C | Universitas Multimedia Nusantara</p>
                 </div>
                 <div class="col-md-3 col-6">
                     <ul class="footer-links">
@@ -138,9 +138,9 @@ if(isset($_GET['sort'])){
                 </div>
                 <div class="col-md-3 col-6">
                     <ul class="footer-m">
-                        <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="./_assets/whatsapp.png" alt="Whatsapp" /></a></li>
+                        <li><a href="https://wa.me/085156231781" target="_blank" rel="noopener noreferrer"><img src="./_assets/whatsapp.png" alt="Whatsapp" /></a></li>
                         <li><a href="https://instagram.com/makabahagia.23?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="noopener noreferrer"><img src="./_assets/instagram.png" alt="Instagram" /></a></li>
-                        <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="./_assets/twitter.png" alt="twitter" /></a></li>
+                        <li><a href="https://twitter.com/makabahagia" target="_blank" rel="noopener noreferrer"><img src="./_assets/twitter.png" alt="twitter" /></a></li>
                     </ul>
                 </div>
                 <hr>
