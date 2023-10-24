@@ -74,7 +74,7 @@
                             </ul>
                         </li>
                         <li class="nav-item me-3">
-                            <a class="nav-link" href="#">Kontak</a>
+                            <a class="nav-link" href="mailto:makabahagia@gmail.com">Kontak</a>
                         </li>
                         </ul>
                         <div class="position-relative d-none d-lg-block d-xl-block" style="width:min-content;">
@@ -144,13 +144,13 @@
                     <ul class="footer-links">
                         <li><a href="./index.php">Home</a></li>
                         <li><a href="./menu.php">Kategori</a></li>
-                        <li><a href="#">Kontak</a></li>
+                        <li><a href="mailto:makabahagia@gmail.com">Kontak</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 col-6">
                     <ul class="footer-m">
                         <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="./_assets/whatsapp.png" alt="Whatsapp" /></a></li>
-                        <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="./_assets/instagram.png" alt="Instagram" /></a></li>
+                        <li><a href="https://instagram.com/makabahagia.23?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" rel="noopener noreferrer"><img src="./_assets/instagram.png" alt="Instagram" /></a></li>
                         <li><a href="#" target="_blank" rel="noopener noreferrer"><img src="./_assets/twitter.png" alt="twitter" /></a></li>
                     </ul>
                 </div>
