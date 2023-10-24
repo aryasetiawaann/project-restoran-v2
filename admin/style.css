@@ -102,6 +102,7 @@ a {
 .table-list button {
   border-radius: 10px;
   background: #b37a64;
+  margin-top: 10px;
   border: none;
   width: 70px;
   height: 35px;

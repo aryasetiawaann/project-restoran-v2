@@ -271,7 +271,7 @@ a {
   display: grid;
   min-height: 500px;
   max-height: 900px;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
   gap: 50px;
   margin: 0 30px;
   overflow-y: hidden;
@@ -535,7 +535,7 @@ hr {
 .menu-page .menu-cards-container {
   display: grid;
   min-height: 500px;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
   gap: 50px;
   margin: 0 30px;
   padding: 100px 50px;
